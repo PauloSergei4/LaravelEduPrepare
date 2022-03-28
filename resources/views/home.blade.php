@@ -80,7 +80,7 @@
             </div>
             <div class="row mt52">
                 <div class="col-lg-12">
-                    <h2 class="sectionTitle">What I Do?</h2>
+                    <h2 class="sectionTitle">Що я роблю?</h2>
                 </div>
             </div>
             <div class="row itemMb30">
