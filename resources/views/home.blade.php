@@ -89,7 +89,7 @@
                         <div class="i_div">
                             <i class="icon icon-Settings"></i>
                         </div>
-                        <h3><a href="javascript:void(0);">Web Development</a></h3>
+                        <h3><a href="javascript:void(0);">Веб розробкаы</a></h3>
                         <h5>from scratch</h5>
                         <p>
                             Sunt explicabo. Nemo enim ipsam voluptatem quia sit voluptas aspernatur.
