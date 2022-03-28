@@ -16,36 +16,36 @@
                         <div class="col-lg-6">
                             <div class="icon_box_01">
                                 <i class="icon icon-User"></i>
-                                <h3>My Name</h3>
-                                <p>K. Melissa Caroll</p>
+                                <h3>Мене звуть</h3>
+                                <p>{{$title}}</p>
                             </div>
                         </div>
                         <div class="col-lg-6">
                             <div class="icon_box_01">
                                 <i class="icon icon-Calculator"></i>
-                                <h3>My Age</h3>
-                                <p>32 Years 241 Days</p>
+                                <h3>Мій вік </h3>
+                                <p>{{--\Carbon\Carbon::parse('2020-01-12 12:00:00')->diffFromYear(2019)--}}32 Years 241 Days</p>
                             </div>
                         </div>
                         <div class="col-lg-6">
                             <div class="icon_box_01">
                                 <i class="icon icon-Mail"></i>
-                                <h3>Email Address</h3>
-                                <p>k.melissa@caroll.me</p>
+                                <h3>Email Адреса</h3>
+                                <p>paulosergei4@gmail.com</p>
                             </div>
                         </div>
                         <div class="col-lg-6">
                             <div class="icon_box_01">
                                 <i class="icon icon-Phone"></i>
                                 <h3>Phone Number</h3>
-                                <p>1.800.987.6987</p>
+                                <p>+3809934064**</p>
                             </div>
                         </div>
                         <div class="col-lg-6">
                             <div class="icon_box_01">
                                 <i class="icon icon-Pointer"></i>
-                                <h3>Address</h3>
-                                <p><a href="https://www.google.com/maps/place/189+Lodge+Ave,+Dagenham+RM8+2HQ,+UK/@51.5438977,0.1111455,17z/data=!3m1!4b1!4m5!3m4!1s0x47d8a5c65f86bfd1:0x9f6ccecbee08b740!8m2!3d51.5438944!4d0.1133342" target="_blank">Click Here to View Map.</a></p>
+                                <h3>Адреса</h3>
+                                <p><a href="https://www.google.com/maps/place/Shostkynskyy+Chemical+Technology+College.+Ivan+Kozhedub/@51.8619034,33.4714062,17.5z/data=!4m12!1m6!3m5!1s0x412b82f052306aab:0xbc3a7adf3c605a60!2sShostkynskyy+Chemical+Technology+College.+Ivan+Kozhedub!8m2!3d51.8618656!4d33.4729475!3m4!1s0x412b82f052306aab:0xbc3a7adf3c605a60!8m2!3d51.8618656!4d33.4729475" target="_blank">Глянути на мапі.</a></p>
                             </div>
                         </div>
                     </div>
