@@ -53,7 +53,7 @@
             </div>
             <div class="row mt30">
                 <div class="col-lg-12">
-                    <h2 class="sectionTitle mb22">Short Bio</h2>
+                    <h2 class="sectionTitle mb22">Коротка біографія</h2>
                 </div>
             </div>
             <div class="row">
