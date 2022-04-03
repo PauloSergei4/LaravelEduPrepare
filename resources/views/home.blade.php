@@ -24,7 +24,7 @@
                             <div class="icon_box_01">
                                 <i class="icon icon-Calculator"></i>
                                 <h3>Мій вік </h3>
-                                <p>{{--\Carbon\Carbon::parse('2020-01-12 12:00:00')->diffFromYear(2019)--}}32 Years 241 Days</p>
+                                <p>{{\Carbon\Carbon::now()->diffInYears('1985-11-28')}} років</p>
                             </div>
                         </div>
                         <div class="col-lg-6">
@@ -89,7 +89,7 @@
                         <div class="i_div">
                             <i class="icon icon-Settings"></i>
                         </div>
-                        <h3><a href="javascript:void(0);">Веб розробкаы</a></h3>
+                        <h3><a href="javascript:void(0);">Веб розробка</a></h3>
                         <h5>from scratch</h5>
                         <p>
                             Sunt explicabo. Nemo enim ipsam voluptatem quia sit voluptas aspernatur.
@@ -101,7 +101,7 @@
                         <div class="i_div">
                             <i class="icon icon-Pen"></i>
                         </div>
-                        <h3><a href="javascript:void(0);">UX recherche</a></h3>
+                        <h3><a href="javascript:void(0);">Викладання</a></h3>
                         <h5>data collection</h5>
                         <p>
                             Sunt explicabo. Nemo enim ipsam voluptatem quia sit voluptas aspernatur.
@@ -113,7 +113,7 @@
                         <div class="i_div">
                             <i class="icon icon-Layers"></i>
                         </div>
-                        <h3><a href="javascript:void(0);">UI design</a></h3>
+                        <h3><a href="javascript:void(0);">Впровадження проектів</a></h3>
                         <h5>creativ design</h5>
                         <p>
                             Sunt explicabo. Nemo enim ipsam voluptatem quia sit voluptas aspernatur.
@@ -125,7 +125,7 @@
                         <div class="i_div">
                             <i class="icon icon-Phone"></i>
                         </div>
-                        <h3><a href="javascript:void(0);">Application</a></h3>
+                        <h3><a href="javascript:void(0);">Додатки</a></h3>
                         <h5>stand alone</h5>
                         <p>
                             Sunt explicabo. Nemo enim ipsam voluptatem quia sit voluptas aspernatur.
@@ -137,7 +137,7 @@
                         <div class="i_div">
                             <i class="icon icon-Share"></i>
                         </div>
-                        <h3><a href="javascript:void(0);">Social Media</a></h3>
+                        <h3><a href="javascript:void(0);">Соціальна складова</a></h3>
                         <h5>digital product</h5>
                         <p>
                             Sunt explicabo. Nemo enim ipsam voluptatem quia sit voluptas aspernatur.
@@ -149,7 +149,7 @@
                         <div class="i_div">
                             <i class="icon icon-ChartUp"></i>
                         </div>
-                        <h3><a href="javascript:void(0);">Search Engine</a></h3>
+                        <h3><a href="javascript:void(0);">Нові відкриття</a></h3>
                         <h5>page rank</h5>
                         <p>
                             Sunt explicabo. Nemo enim ipsam voluptatem quia sit voluptas aspernatur.

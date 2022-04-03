@@ -101,8 +101,8 @@
                 <div class="widget">
                     <h3 class="widget_title">Теги</h3>
                     <div class="tabclouds">
-                        <a href="blog.html">Web Design</a>
-                        <a href="blog.html">Development</a>
+                        <a href="blog.html">Веб розробка</a>
+                        <a href="blog.html">Впровадження</a>
                         <a href="blog.html">CSS</a>
                         <a href="blog.html">Studio</a>
                         <a href="blog.html">Award</a>

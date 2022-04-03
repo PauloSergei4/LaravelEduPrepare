@@ -20,6 +20,7 @@ class HomeController extends Controller
 //        dd($posts);
 
         $title = 'Пата Павло';
+        //$date = date("Y-m-d");
         return view('home', compact('title'));
     }
 }
