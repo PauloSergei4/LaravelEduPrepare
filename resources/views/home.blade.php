@@ -152,7 +152,7 @@
                         <h3><a href="javascript:void(0);">Нові відкриття</a></h3>
                         <h5>page rank</h5>
                         <p>
-                            Sunt explicabo. Nemo enim ipsam voluptatem quia sit voluptas aspernatur.
+                            Завжди шукаю нові відкриття. Nemo enim ipsam voluptatem quia sit voluptas aspernatur.
                         </p>
                     </div>
                 </div>
