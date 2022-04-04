@@ -140,7 +140,7 @@
                         <h3><a href="javascript:void(0);">Соціальна складова</a></h3>
                         <h5>соціальні проекти</h5>
                         <p>
-                            My explicabo. Nemo enim ipsam voluptatem quia sit voluptas aspernatur.
+                            Я - людина соціальна. Nemo enim ipsam voluptatem quia sit voluptas aspernatur.
                         </p>
                     </div>
                 </div>
