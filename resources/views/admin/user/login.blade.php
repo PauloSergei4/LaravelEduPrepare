@@ -11,7 +11,7 @@
             <div class="logo">
                 <a href="{{route('home')}}">Блог</a>
             </div>
-            <p class="auth-description">Будь-ласка авторизуйтесь.<br>Не маєте акаунту? <a href="sign-up.html">Зареєструвати.</a></p>
+            <p class="auth-description">Будь-ласка авторизуйтесь.<br>Не маєте акаунту? <a href="{{route('register')}}">Зареєструвати.</a></p>
 
             <div class="auth-credentials m-b-xxl">
                 <form action="{{route('login')}}" method="post">

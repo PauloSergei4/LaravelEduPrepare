@@ -21,16 +21,27 @@ class UserController extends Controller
             'name'=>'required',
             'email'=>'required|email|unique:users',
             'password'=>'required|confirmed',
+            'avatar'=>'nullable|image',
         ]);
+
+        if($request->hasFile('avatar')){
+            $folder = date('Y-m-d');
+            $avatar = $request->file('avatar')->store("images/{$folder}");
+        }
+
        $user = User::create([
             'name'=>$request->name,
             'email'=>$request->email,
             'password'=>Hash::make($request->password),
+           'avatar'=>$avatar ?? null,
 
         ]);
         session()->flash('success','Реєстрація успішна');
         Auth::login($user);
-        return redirect()->Route('admin.home');
+        if ('is_admin'==1) {
+            return redirect()->Route('admin.home');
+        }
+        return redirect()->Route('home');
     }
 
 
@@ -47,12 +58,14 @@ class UserController extends Controller
             'password'=>'required',
         ]);
 
+
         if(Auth::attempt([
             'email'=> $request->email,
             'password'=>$request->password
         ])){
             return redirect()->Route('admin.home');
         }
+
         return redirect()->back()->with('error', 'Невірний логін або пароль');
 
     }
