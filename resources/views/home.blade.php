@@ -38,7 +38,21 @@
                             <div class="icon_box_01">
                                 <i class="icon icon-Phone"></i>
                                 <h3>Phone Number</h3>
-                                <p>+3809934064**</p>
+{{--                                <p>+3809934064**</p>--}}
+                                <span class="phone_number">+380993406428<span class="phone_number_active"> Показать</span></span>
+                                <script>
+                                    [].forEach.call(document.querySelectorAll('.phone_number'),function(node){
+                                        const item=node.firstChild;
+                                        item.__hiddenPart=item.textContent.substr(-4);
+                                        item.textContent=item.textContent.replace(item.__hiddenPart,'xxxx');
+
+                                        node.querySelector('.phone_number_active').addEventListener('click',function(){
+                                            item.textContent=item.textContent.replace('xxxx',item.__hiddenPart);
+
+                                            this.style.display='none';
+                                        });
+                                    });
+                                </script>
                             </div>
                         </div>
                         <div class="col-lg-6">

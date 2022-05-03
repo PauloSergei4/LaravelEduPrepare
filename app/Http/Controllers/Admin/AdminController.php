@@ -30,6 +30,14 @@ class AdminController extends Controller
         return view('admin.posts', compact( 'title','posts', 'maxpost'));
     }
 
+    public function profile()
+    {
+        $title = 'Профіль';
+
+        $maxpost = DB::table('posts')->max('id');
+        return view('admin.profile', compact( 'title', 'maxpost'));
+    }
+
     public function create()
     {
 

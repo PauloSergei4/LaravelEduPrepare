@@ -58,6 +58,7 @@ Route::prefix('admin')->name('admin.')->middleware('admin')->group(function(){
     Route::get('/posts', [AdminController::class, 'posts'])->name('posts');
     Route::post('/posts', [AdminController::class, 'store'])->name('store');
     Route::get('/create', [AdminController::class, 'create'])->name('create');
+    Route::get('/profile',[AdminController::class, 'profile'])->name('profile');
 
 
 //    Route::get('post/create', function (){

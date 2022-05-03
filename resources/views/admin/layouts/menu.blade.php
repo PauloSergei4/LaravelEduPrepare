@@ -26,6 +26,9 @@
             <li @if (Route::is('admin.create'))class="active-page"@endif>
                 <a href="{{route('admin.create')}}"><i class="material-icons-two-tone">cloud_queue</i>Створити запис</a>
             </li>
+            <li @if (Route::is('admin.profile'))class="active-page"@endif>
+                <a href="{{route('admin.profile')}}"><i class="material-icons-two-tone">sentiment_satisfied_alt</i>Профіль</a>
+            </li>
 {{--            <li>--}}
 {{--                <a href="calendar.html"><i class="material-icons-two-tone">calendar_today</i>Calendar<span class="badge rounded-pill badge-success float-end">14</span></a>--}}
 {{--            </li>--}}

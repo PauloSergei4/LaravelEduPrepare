@@ -67,6 +67,7 @@
                     <ul>
                         <li><a href="{{route('register')}}">Реєстрація</a>(18)</li>
                         <li><a href="{{route('login')}}">Авторизація</a>(11)</li>
+                       @if (Auth::check())  <li><a href="{{route('admin.home')}}">Адмінка</a>(11)</li>@endif
 {{--                        <li><a href="blog.html">Branding</a>(17)</li>--}}
 {{--                        <li><a href="blog.html">UI UX</a>(23)</li>--}}
 {{--                        <li><a href="blog.html">Agency</a>(19)</li>--}}
