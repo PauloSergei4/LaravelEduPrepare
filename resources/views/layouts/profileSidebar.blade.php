@@ -12,7 +12,7 @@
         </div>
     </div>
     <div class="psPhoto">
-        <img src="storage/images/avatar.jpg" alt=""/>
+        <img src="storage/app/public/images/avatar.jpg" alt=""/>
         <div class="psSocial">
             <a href="https://facebook.com/PauloSergei4" target="_blank" class="fac"><i class="icofont-facebook"></i></a>
             <a href="www.linkedin.com/in/patapavlo" target="_blank" class="twi"><i class="icofont-linkedin"></i></a>
