@@ -62,6 +62,7 @@
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="addDropdownLink">
                                     <li><a class="dropdown-item" href="{{route('admin.create')}}">Новий запис блогу</a></li>
+                                    <li><a class="dropdown-item" href="{{route('admin.addrubric')}}">Нова рубріка</a></li>
 {{--                                    <li><a class="dropdown-item" href="#">New Board</a></li>--}}
 {{--                                    <li><a class="dropdown-item" href="#">Create Project</a></li>--}}
                                 </ul>

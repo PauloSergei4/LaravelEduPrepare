@@ -38,13 +38,6 @@ class AdminController extends Controller
         return view('admin.profile', compact( 'title', 'maxpost'));
     }
 
-    public function rubric()
-    {
-        $title = 'Рубріки';
-
-        $maxpost = DB::table('posts')->max('id');
-        return view('admin.profile', compact( 'title', 'maxpost'));
-    }
 
     public function create()
     {

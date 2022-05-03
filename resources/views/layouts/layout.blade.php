@@ -63,7 +63,7 @@
                     </form>
                 </div>
                 <div class="widget widget-search">
-                    <h3 class="widget_title">Рубрики</h3>
+                    <h3 class="widget_title">Посилання</h3>
                     <ul>
                         <li><a href="{{route('register')}}">Реєстрація</a>(18)</li>
                         <li><a href="{{route('login')}}">Авторизація</a>(11)</li>
