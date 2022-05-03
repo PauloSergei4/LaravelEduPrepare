@@ -39,6 +39,6 @@
     </div>
     <div class="psFooter">
         <a href="javascript:void(0);" class="btt_btn only_icon btt_reverse"><span><i class="icon icon-DownloadCloud"></i></span></a>
-        <a href="{{route('contact')}}" class="btt_btn"><span><i class="icon icon-Bag"></i> Контакти</span></a>
+        <a href="{{route('contact')}}" class="btt_btn"><span><i class="icon icon-Bag"></i>Контакти</span></a>
     </div>
 </div>
