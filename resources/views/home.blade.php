@@ -7,7 +7,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-12">
-                    <h2 class="sectionTitle">About Info</h2>
+                    <h2 class="sectionTitle">Про мене</h2>
                 </div>
             </div>
             <div class="row">
