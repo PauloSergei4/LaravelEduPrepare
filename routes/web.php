@@ -60,9 +60,9 @@ Route::prefix('admin')->name('admin.')->middleware('admin')->group(function(){
     Route::post('/posts',   [AdminController::class, 'store'])->name('store');
     Route::get('/create',   [AdminController::class, 'create'])->name('create');
     Route::get('/profile',  [AdminController::class, 'profile'])->name('profile');
-    Route::get('/rubric',   [RubricController::class, 'index'])->name('rubric');
+    Route::get('/rubrics',   [RubricController::class, 'index'])->name('rubrics');
     Route::get('/addrubric',[RubricController::class, 'create'])->name('addrubric');
-    Route::post('/rubric',   [RubricController::class, 'store'])->name('rubricstore');
+    Route::post('/rubrics',   [RubricController::class, 'store'])->name('rubricstore');
 
 
 //    Route::get('post/create', function (){

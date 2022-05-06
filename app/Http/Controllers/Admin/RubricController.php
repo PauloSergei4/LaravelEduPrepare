@@ -21,7 +21,7 @@ class RubricController extends Controller
        // dd($title);
         $rubrics = Rubric::orderBy('id', 'desc')->get();
         $maxpost = DB::table('posts')->max('id');
-        return view('admin.rubric', compact( 'title', 'rubrics','maxpost'));
+        return view('admin.rubrics.rubric', compact( 'title', 'rubrics','maxpost'));
     }
 
     /**
@@ -33,7 +33,7 @@ class RubricController extends Controller
     {
         $title = 'Створити рубріку';
         $maxpost = DB::table('posts')->max('id');
-        return view('admin.addrubric', compact( 'title','maxpost'));
+        return view('admin.rubrics.addrubric', compact( 'title','maxpost'));
     }
 
     /**
@@ -54,7 +54,7 @@ class RubricController extends Controller
         $validator = Validator::make($request->all(),$rules, $messages)->validate();
         Rubric::create($request->all());
         $request->session()->flash('success', 'Дані збережено');
-        return redirect()->route('admin.rubric', compact('request'));
+        return redirect()->route('admin.rubrics.rubric', compact('request'));
     }
 
     /**

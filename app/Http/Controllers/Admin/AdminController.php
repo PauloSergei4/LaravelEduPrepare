@@ -27,7 +27,7 @@ class AdminController extends Controller
             $posts = Post::orderBy('id', 'desc')->get();
 
         $maxpost = DB::table('posts')->max('id');
-        return view('admin.posts', compact( 'title','posts', 'maxpost'));
+        return view('admin.posts.posts', compact( 'title','posts', 'maxpost'));
     }
 
     public function profile()
@@ -45,7 +45,7 @@ class AdminController extends Controller
         $title = 'Створити новину';
         $rubrics =  Rubric::pluck('name', 'id')->all();
         $maxpost = DB::table('posts')->max('id');
-        return view('admin.create', compact('title','rubrics', 'maxpost'));
+        return view('admin.posts.create', compact('title','rubrics', 'maxpost'));
     }
 
     /**
@@ -79,7 +79,7 @@ class AdminController extends Controller
         $validator = Validator::make($request->all(),$rules, $messages)->validate();
         Post::create($request->all());
         $request->session()->flash('success', 'Дані збережено');
-        return redirect()->route('admin.posts', compact('request'));
+        return redirect()->route('admin.posts.posts', compact('request'));
     }
 }
 

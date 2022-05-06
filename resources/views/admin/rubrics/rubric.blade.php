@@ -26,7 +26,7 @@
                                         <th scope="row">{{$rubric->id}}</th>
                                         <td>{{$rubric->name}}</td>
 {{--                                        <td>{{Str::limit($post->content, 30)}}</td>--}}
-{{--                                        <td>{{$post->$rubric->name}}</td>--}}
+{{--                                        <td>{{$post->$rubrics->name}}</td>--}}
                                         <td>{{$rubric->getRubricDate()}}</td>
                                         <td><a href="#">Змінити</a></td>
                                     </tr>
