@@ -8,7 +8,7 @@
             <div class="row">
                 <div class="col">
                     <div class="page-description">
-                        <h1>Змінити рубрику</h1>
+                        <h1>Створити нову рубрику</h1>
                         <span>Заповніть форму, натисніть зберегти.</span>
                     </div>
                 </div>
@@ -17,20 +17,19 @@
                 <div class="col-md-12">
                     <div class="card">
                         <div class="card-header">
-                            <h5 class="card-title"> Змінити рубрику</h5>
+                            <h5 class="card-title"> Створити нову рубрику</h5>
                         </div>
 
                         <div class="card-body">
-                            <p class="card-description">Змінити  <strong>рубрику: </strong> "{{$rubric->name}}" </p>
+                            <p class="card-description">Додати  <strong>нову </strong> рубрику</p>
                             <div class="example-container">
                                 <div class="example-content">
 
-                                    <form class="row g-3" action="{{route('admin.rubrics.update')}}" method="post">
+                                    <form class="row g-3" action="{{route('admin.rubrics.store')}}" method="post">
                                         @csrf
-                                        @method('PUT')
                                         <div class="col-12">
                                             <label for="inputTitle" class="form-label">Назва</label>
-                                            <input type="text" class="form-control @error('name') is-invalid @enderror" name="name" id="name" value="{{$rubric->name}}" placeholder="Введіть назву">
+                                            <input type="text" class="form-control @error('name') is-invalid @enderror" name="name" id="name" value="{{old('name')}}" placeholder="Введіть назву">
                                             @error('name')
                                             <div class="invalid-feedback">{{ $message }}</div>
                                             @enderror

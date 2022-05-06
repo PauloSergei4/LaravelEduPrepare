@@ -25,7 +25,7 @@
                             <div class="example-container">
                                 <div class="example-content">
 
-                                    <form class="row g-3" action="{{route('admin.update', ['post'=>$post->id])}}" method="post">
+                                    <form class="row g-3" action="{{route('admin.posts.update', $post->id)}}" method="post">
                                         @csrf
                                         @method('PUT')
                                         <div class="col-12">
@@ -49,7 +49,7 @@
                                             <select type="text" class="form-control @error('rubric_id') is-invalid @enderror" name="rubric_id" id="rubric_id">
                                                 <option>Оберіть рубрику зі списку: </option>
                                                 @foreach($rubrics as $k=>$v)
-                                                    <option value="{{$post->rubric_id}}"
+                                                    <option value="{{$k}}"
                                                     >{{$v}}</option>
                                                 @endforeach
                                             </select>

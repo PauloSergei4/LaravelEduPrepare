@@ -24,7 +24,7 @@
                 <a href="{{route('admin.posts')}}"><i class="material-icons-two-tone">inbox</i>Пости блогу<span class="badge rounded-pill badge-danger float-end">{{$maxpost}}</span></a>
             </li>
             <li @if (Route::is('admin.create'))class="active-page"@endif>
-                <a href="{{route('admin.create')}}"><i class="material-icons-two-tone">cloud_queue</i>Створити запис</a>
+                <a href="{{route('admin.posts.create')}}"><i class="material-icons-two-tone">cloud_queue</i>Створити запис</a>
             </li>
             <li @if (Route::is('admin.rubrics'))class="active-page"@endif>
                 <a href="{{route('admin.rubrics')}}"><i class="material-icons-two-tone">bookmark</i>Рубріки</a>

@@ -25,7 +25,7 @@
                             <div class="example-container">
                                 <div class="example-content">
 
-                                    <form class="row g-3" action="{{route('admin.store')}}" method="post">
+                                    <form class="row g-3" action="{{route('admin.posts.store')}}" method="post">
                                         @csrf
                                         <div class="col-12">
                                             <label for="inputTitle" class="form-label">Назва</label>

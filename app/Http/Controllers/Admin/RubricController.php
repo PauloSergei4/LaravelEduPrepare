@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Models\Post;
 use App\Models\Rubric;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
@@ -21,7 +22,7 @@ class RubricController extends Controller
        // dd($title);
         $rubrics = Rubric::orderBy('id', 'desc')->get();
         $maxpost = DB::table('posts')->max('id');
-        return view('admin.rubrics.rubric', compact( 'title', 'rubrics','maxpost'));
+        return view('admin.rubrics.rubrics', compact( 'title', 'rubrics','maxpost'));
     }
 
     /**
@@ -33,7 +34,7 @@ class RubricController extends Controller
     {
         $title = 'Створити рубріку';
         $maxpost = DB::table('posts')->max('id');
-        return view('admin.rubrics.addrubric', compact( 'title','maxpost'));
+        return view('admin.rubrics.create', compact( 'title','maxpost'));
     }
 
     /**
@@ -54,7 +55,7 @@ class RubricController extends Controller
         $validator = Validator::make($request->all(),$rules, $messages)->validate();
         Rubric::create($request->all());
         $request->session()->flash('success', 'Дані збережено');
-        return redirect()->route('admin.rubrics.rubric', compact('request'));
+        return redirect()->route('admin.rubrics', compact('request'));
     }
 
     /**
@@ -76,7 +77,10 @@ class RubricController extends Controller
      */
     public function edit($id)
     {
-        dd($id);
+        $title = 'Змінити рубрику';
+        $rubric = Rubric::find($id);
+        $maxpost = DB::table('posts')->max('id');
+        return view('admin.rubrics.edit', compact('title', 'id', 'rubric', 'maxpost'));
     }
 
     /**
@@ -99,6 +103,7 @@ class RubricController extends Controller
      */
     public function destroy($id)
     {
-        dd($id);
+        Rubric::destroy($id);
+        return redirect()->route('admin.rubrics')->with('success','Успішно видалено');
     }
 }

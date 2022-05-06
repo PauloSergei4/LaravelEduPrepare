@@ -16,6 +16,12 @@ class PostController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
+//    public function __construct(Request $request)
+//    {
+//        dump($request->route()->getName());
+//    }
+
     public function index()
     {
         $title = 'Пости  блогу';
@@ -62,7 +68,7 @@ class PostController extends Controller
         $validator = Validator::make($request->all(),$rules, $messages)->validate();
         Post::create($request->all());
         $request->session()->flash('success', 'Дані збережено');
-        return redirect()->route('admin.posts.posts', compact('request'));
+        return redirect()->route('admin.posts', compact('request'));
     }
 
     /**
@@ -86,7 +92,6 @@ class PostController extends Controller
     {
         $title = 'Змінити пост';
         $post = Post::find($id);
-        //$titlepost = $post->get('title');
         $rubrics =  Rubric::pluck('name', 'id')->all();
         $maxpost = DB::table('posts')->max('id');
         return view('admin.posts.edit', compact('title', 'id', 'post', 'rubrics', 'maxpost'));
@@ -117,7 +122,7 @@ class PostController extends Controller
         $post = Post::find($id);
         $post->update($request->all());
         $request->session()->flash('success', 'Дані збережено');
-        return redirect()->route('admin.posts.posts', compact('request'));
+        return redirect()->route('admin.posts', compact('request'));
     }
 
     /**
@@ -128,6 +133,7 @@ class PostController extends Controller
      */
     public function destroy($id)
     {
-        dd($id);
+        Post::destroy($id);
+        return redirect()->route('admin.posts')->with('success','Успішно видалено');
     }
 }
