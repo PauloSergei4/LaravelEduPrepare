@@ -8,7 +8,7 @@
             <div class="row">
                 <div class="col">
                     <div class="page-description">
-                        <h1>Створити новий запис блогу</h1>
+                        <h1>Оновити запис блогу</h1>
                         <span>Заповніть форму, натисніть зберегти.</span>
                     </div>
                 </div>
@@ -17,26 +17,27 @@
                 <div class="col-md-12">
                     <div class="card">
                         <div class="card-header">
-                            <h5 class="card-title"> Створити новий запис блогу</h5>
+                            <h5 class="card-title"> Оновити запис блогу</h5>
                         </div>
 
                         <div class="card-body">
-                            <p class="card-description">Додати  <strong>новину </strong> або запис блогу.</p>
+                            <p class="card-description">Оновити  <strong>новину </strong>"{{$post->title}}"</p>
                             <div class="example-container">
                                 <div class="example-content">
 
-                                    <form class="row g-3" action="{{route('admin.store')}}" method="post">
+                                    <form class="row g-3" action="{{route('admin.update', ['post'=>$post->id])}}" method="post">
                                         @csrf
+                                        @method('PUT')
                                         <div class="col-12">
                                             <label for="inputTitle" class="form-label">Назва</label>
-                                            <input type="text" class="form-control @error('title') is-invalid @enderror" name="title" id="Title" value="{{old('title')}}" placeholder="Введіть назву">
+                                            <input type="text" class="form-control @error('title') is-invalid @enderror" name="title" id="Title" value="{{$post->title}}" placeholder="Введіть назву">
                                             @error('title')
                                             <div class="invalid-feedback">{{ $message }}</div>
                                             @enderror
                                         </div>
                                         <div class="col-12">
                                             <label for="inputContent" class="form-label">Контент</label>
-                                            <textarea type="text" class="form-control @error('content') is-invalid @enderror" name="content" id="Content" value="{{old('content')}}" rows="5">
+                                            <textarea type="text" class="form-control @error('content') is-invalid @enderror" name="content" id="Content" rows="5">{{$post->content}}
                                             </textarea>
                                             @error('content')
                                             <div class="invalid-feedback">{{ $message }}</div>
@@ -48,8 +49,7 @@
                                             <select type="text" class="form-control @error('rubric_id') is-invalid @enderror" name="rubric_id" id="rubric_id">
                                                 <option>Оберіть рубрику зі списку: </option>
                                                 @foreach($rubrics as $k=>$v)
-                                                    <option value="{{$k}}"
-                                                            @if(old('rubric_id')==$k) selected @endif
+                                                    <option value="{{$post->rubric_id}}"
                                                     >{{$v}}</option>
                                                 @endforeach
                                             </select>

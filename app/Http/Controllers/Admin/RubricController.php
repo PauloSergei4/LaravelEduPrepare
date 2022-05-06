@@ -76,7 +76,7 @@ class RubricController extends Controller
      */
     public function edit($id)
     {
-        //
+        dd($id);
     }
 
     /**
@@ -99,6 +99,6 @@ class RubricController extends Controller
      */
     public function destroy($id)
     {
-        //
+        dd($id);
     }
 }

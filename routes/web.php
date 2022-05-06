@@ -5,6 +5,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PageController;
 use App\Http\Controllers\Admin\AdminController;
 use App\Http\Controllers\Admin\RubricController;
+use App\Http\Controllers\Admin\PostController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -56,14 +57,18 @@ Route::fallback(function(){
 //
 Route::prefix('admin')->name('admin.')->middleware('admin')->group(function(){
     Route::get('/home',     [AdminController::class, 'index'])->name('home');
-    Route::get('/posts',    [AdminController::class, 'posts'])->name('posts');
-    Route::post('/posts',   [AdminController::class, 'store'])->name('store');
-    Route::get('/create',   [AdminController::class, 'create'])->name('create');
+    Route::get('/posts',    [PostController::class, 'index'])->name('posts');
+    Route::post('/posts',   [PostController::class, 'store'])->name('store');
+    Route::get('/create',   [PostController::class, 'create'])->name('create');
+    Route::get('/edit/{post}',     [PostController::class, 'edit'])->name('edit');
+    Route::put('/posts',     [PostController::class, 'update'])->name('update');
+    Route::get('/delete/{post}',     [PostController::class, 'destroy'])->name('delete');
     Route::get('/profile',  [AdminController::class, 'profile'])->name('profile');
     Route::get('/rubrics',   [RubricController::class, 'index'])->name('rubrics');
     Route::get('/addrubric',[RubricController::class, 'create'])->name('addrubric');
     Route::post('/rubrics',   [RubricController::class, 'store'])->name('rubricstore');
-
+    Route::get('/edit/{rubric}',     [RubricController::class, 'edit'])->name('editrubric');
+    Route::get('/delete/{rubric}',     [RubricController::class, 'destroy'])->name('deleterubric');
 
 //    Route::get('post/create', function (){
 //        Return 'Posts Create';

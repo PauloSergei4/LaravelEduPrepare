@@ -20,15 +20,7 @@ class AdminController extends Controller
         return view('admin.index', compact('title', 'maxpost'));
     }
 
-    public function posts()
-    {
-        $title = 'Пости  блогу';
 
-            $posts = Post::orderBy('id', 'desc')->get();
-
-        $maxpost = DB::table('posts')->max('id');
-        return view('admin.posts.posts', compact( 'title','posts', 'maxpost'));
-    }
 
     public function profile()
     {
@@ -39,14 +31,7 @@ class AdminController extends Controller
     }
 
 
-    public function create()
-    {
 
-        $title = 'Створити новину';
-        $rubrics =  Rubric::pluck('name', 'id')->all();
-        $maxpost = DB::table('posts')->max('id');
-        return view('admin.posts.create', compact('title','rubrics', 'maxpost'));
-    }
 
     /**
      * Display a listing of the resource.
@@ -56,30 +41,7 @@ class AdminController extends Controller
      * m
      */
 
-    public function store(Request $request)
-    {
-//        $this->validate($request, [
-//            'title' => 'required|min:5|max:100',
-//            'content'=>'required',
-//            'rubric_id'=>'integer'
-//        ]);
 
-        $rules = [
-            'title' => 'required|min:5|max:100',
-            'content'=>'required',
-            'rubric_id'=>'integer'
-        ];
-        $messages = [
-            'title.required' => 'Заповніть поле назви',
-            'title.min'=>'Мінімум 5 символів в назві',
-            'rubric_id.integer'=>'Оберіть рубрику',
-            'content.required' => 'Ви не написали статтю',
-        ];
-
-        $validator = Validator::make($request->all(),$rules, $messages)->validate();
-        Post::create($request->all());
-        $request->session()->flash('success', 'Дані збережено');
-        return redirect()->route('admin.posts.posts', compact('request'));
-    }
 }
+
 

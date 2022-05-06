@@ -30,7 +30,8 @@
                                 <td>{{Str::limit($post->content, 30)}}</td>
                                 <td>{{$post->rubric->name}}</td>
                                 <td>{{$post->getPostDate()}}</td>
-                                <td><a href="#">Змінити</a></td>
+                                <td><a href="{{route('admin.edit', $post->id)}}"><button type="button" class="btn btn-primary btn-burger"><i class="material-icons">edit</i></button></a>
+                                <a href="{{route('admin.delete', $post->id)}}"><button type="button" class="btn btn-danger btn-burger"><i class="material-icons">delete_outline</i></button></a></td>
                             </tr>
                             @endforeach
                             </tbody>

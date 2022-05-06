@@ -28,7 +28,8 @@
 {{--                                        <td>{{Str::limit($post->content, 30)}}</td>--}}
 {{--                                        <td>{{$post->$rubrics->name}}</td>--}}
                                         <td>{{$rubric->getRubricDate()}}</td>
-                                        <td><a href="#">Змінити</a></td>
+                                        <td><a href="{{route('admin.editrubric', $rubric->id)}}"><button type="button" class="btn btn-primary btn-burger"><i class="material-icons">edit</i></button></a>
+                                            <a href="{{route('admin.deleterubric', $rubric->id)}}"><button type="button" class="btn btn-danger btn-burger"><i class="material-icons">delete_outline</i></button></a></td>
                                     </tr>
                                 @endforeach
                                 </tbody>
