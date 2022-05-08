@@ -50,6 +50,7 @@
                                                 <option>Оберіть рубрику зі списку: </option>
                                                 @foreach($rubrics as $k=>$v)
                                                     <option value="{{$k}}"
+                                                            @if($post->rubric_id==$k) selected @endif
                                                     >{{$v}}</option>
                                                 @endforeach
                                             </select>

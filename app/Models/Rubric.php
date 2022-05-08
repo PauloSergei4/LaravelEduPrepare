@@ -18,6 +18,6 @@ class Rubric extends Model
 
     public function posts()
     {
-        return $this->hasMany('App/Post', 'rubric_id');
+        return $this->hasMany(Post::class, 'rubric_id');
     }
 }

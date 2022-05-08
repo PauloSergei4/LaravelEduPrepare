@@ -25,7 +25,7 @@
                             <div class="example-container">
                                 <div class="example-content">
 
-                                    <form class="row g-3" action="{{route('admin.rubrics.update')}}" method="post">
+                                    <form class="row g-3" action="{{route('admin.rubrics.update', $rubric->id)}}" method="post">
                                         @csrf
                                         @method('PUT')
                                         <div class="col-12">

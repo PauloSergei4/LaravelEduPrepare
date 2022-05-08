@@ -92,7 +92,17 @@ class RubricController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $rules = [
+            'name' => 'required|min:2|max:15',
+        ];
+        $messages = [
+            'name.required' => 'Заповніть поле назви',
+        ];
+        $validator = Validator::make($request->all(),$rules, $messages)->validate();
+        $rubric = Rubric::find($id);
+        $rubric->update($request->all());
+        $request->session()->flash('success', 'Дані збережено');
+        return redirect()->route('admin.rubrics', compact('request'));
     }
 
     /**
