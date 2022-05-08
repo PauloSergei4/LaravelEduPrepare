@@ -221,6 +221,7 @@
 <script src="/admin/assets/js/main.min.js"></script>
 <script src="/admin/assets/js/custom.js"></script>
 <script src="/admin/assets/js/pages/dashboard.js"></script>
+<script src="/admin/assets/plugins/perfectscroll/perfect-scrollbar.min.js"></script>
 <script src="/admin/assets/plugins/dropzone/min/dropzone.min.js"></script>
 <script src="/admin/assets/plugins/pace/pace.min.js"></script>
 <script src="/admin/assets/plugins/highlight/highlight.pack.js"></script>
