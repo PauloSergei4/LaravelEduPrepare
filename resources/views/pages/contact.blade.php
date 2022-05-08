@@ -45,21 +45,32 @@
                     <div class="col-lg-4">
                         <div class="icon_box_01">
                             <i class="icon icon-Mail"></i>
-                            <h3>Email Address</h3>
-                            <p>k.melissa@caroll.me</p>
+                            <h3>Email </h3>
+                            <p>paulosergei4@gmail.com</p>
                         </div>
                         <div class="icon_box_01">
                             <i class="icon icon-Phone"></i>
-                            <h3>Phone Number</h3>
-                            <p>1.800.987.6987</p>
+                            <h3>Телефон</h3>
+                            <span class="phone_number">+380993406428<span class="phone_number_active"> Показать</span></span>
+                            <script>
+                                [].forEach.call(document.querySelectorAll('.phone_number'),function(node){
+                                    const item=node.firstChild;
+                                    item.__hiddenPart=item.textContent.substr(-4);
+                                    item.textContent=item.textContent.replace(item.__hiddenPart,'xxxx');
+
+                                    node.querySelector('.phone_number_active').addEventListener('click',function(){
+                                        item.textContent=item.textContent.replace('xxxx',item.__hiddenPart);
+
+                                        this.style.display='none';
+                                    });
+                                });
+                            </script>
                         </div>
                         <div class="icon_box_01 addrBox">
                             <i class="icon icon-Pointer"></i>
-                            <h3>Address</h3>
+                            <h3>Адреса</h3>
                             <p>
-                                189 Lodge Avenue,
-                                Dagenham, RM8 2HQ,
-                                United Kingdom
+                                м. Шостка, вул. Інститутська, 1 (коледж)
                             </p>
                         </div>
                     </div>

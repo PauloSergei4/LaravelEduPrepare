@@ -74,21 +74,20 @@
                 <div class="col-lg-6">
                     <div class="abContent">
                         <p>
-                           Викладач зі стажем, веб-розробник, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                            Quis ipsum suspendisse ultrices gravida risus commodo. Quis ipsum suspendisse ultrices gravida.
+                           Викладач зі стажем, веб-розробник, працюю в коледжы викладачем електротехнічних дисциплін та ІТ технологій.
                         </p>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                            <a href="#" class="fw_500">ut labore et dolore magna</a> aliqua.
+                            Маю свою веб-студію, яка займається веб-проеткми та мобільними додатками
+                            <a href="https://web.centr.today/" target="_blank" class="fw_500">переглянути сайт</a> веб-студії.
                         </p>
                     </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="abContent">
                         <p class="mb27">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Займаюсь розробкой сайтів для себе та під замовлення, навчаю цього молодь надаю перший старт для кар'єри веб-розробника.
                         </p>
-                        <img class="signImg" src="assets/images/home_01/3.png" alt=""/>
+{{--                        <img class="signImg" src="assets/images/home_01/3.png" alt=""/>--}}
                     </div>
                 </div>
             </div>
@@ -104,9 +103,9 @@
                             <i class="icon icon-Settings"></i>
                         </div>
                         <h3><a href="javascript:void(0);">Веб розробка</a></h3>
-                        <h5>from scratch</h5>
+                        <h5>PHP, Laravel, Joomla, OpenCart</h5>
                         <p>
-                            Sunt explicabo. Nemo enim ipsam voluptatem quia sit voluptas aspernatur.
+                            Використовую сучасні технології і системи для повної розробки сайту.
                         </p>
                     </div>
                 </div>
@@ -116,9 +115,9 @@
                             <i class="icon icon-Pen"></i>
                         </div>
                         <h3><a href="javascript:void(0);">Викладання</a></h3>
-                        <h5>data collection</h5>
+                        <h5>комп'ютерно-інтегровані технології</h5>
                         <p>
-                            Sunt explicabo. Nemo enim ipsam voluptatem quia sit voluptas aspernatur.
+                           Викладаю в коледжі сучасні комп'ютерно-інтегровані технології.
                         </p>
                     </div>
                 </div>
@@ -128,9 +127,9 @@
                             <i class="icon icon-Layers"></i>
                         </div>
                         <h3><a href="javascript:void(0);">Впровадження проектів</a></h3>
-                        <h5>creativ design</h5>
+                        <h5>участь у проектах</h5>
                         <p>
-                            Sunt explicabo. Nemo enim ipsam voluptatem quia sit voluptas aspernatur.
+                            Впроваджую декілька проетів в місті та області.
                         </p>
                     </div>
                 </div>
@@ -140,9 +139,9 @@
                             <i class="icon icon-Phone"></i>
                         </div>
                         <h3><a href="javascript:void(0);">Додатки</a></h3>
-                        <h5>stand alone</h5>
+                        <h5>iOS, Android</h5>
                         <p>
-                            Sunt explicabo. Nemo enim ipsam voluptatem quia sit voluptas aspernatur.
+                            Керю потужною командою розробників додатків для мобільних платформ.
                         </p>
                     </div>
                 </div>
@@ -154,7 +153,7 @@
                         <h3><a href="javascript:void(0);">Соціальна складова</a></h3>
                         <h5>соціальні проекти</h5>
                         <p>
-                            Я - людина соціальна. Nemo enim ipsam voluptatem quia sit voluptas aspernatur.
+                            Я - людина соціальна. Постійно підримую та беру участь у соціальних проектах міста.
                         </p>
                     </div>
                 </div>
@@ -164,154 +163,154 @@
                             <i class="icon icon-ChartUp"></i>
                         </div>
                         <h3><a href="javascript:void(0);">Нові відкриття</a></h3>
-                        <h5>page rank</h5>
+                        <h5>відкритий для нового</h5>
                         <p>
-                            Завжди шукаю нові відкриття. Nemo enim ipsam voluptatem quia sit voluptas aspernatur.
+                            Завжди шукаю нові відкриття. Спілкуюся з молоддю генерую, проецюю та просуваю сучасні проекти.
                         </p>
                     </div>
                 </div>
             </div>
-            <div class="row mt30">
-                <div class="col-lg-12">
-                    <h2 class="sectionTitle">What They Says?</h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="testimonialSlider owl-carousel">
-                        <div class="singleTestimonial">
-                            <div class="testiImg">
-                                <img src="assets/images/author/1.jpg" alt="">
-                                <span></span>
-                            </div>
-                            <div class="testicon">
-                                <p>
-                                    They'll have to make the best of things its an uphill climb. Said Californ'y is the place you ought
-                                    to be So they loaded up the truck and moved to Beverly. Hills that is. Swimmin' pools movie stars.
-                                    Maybe you and me were never meant to be.
-                                </p>
-                                <div class="tesAuthor"><h5>Edward Johnson,</h5> <h6>themewar.com</h6></div>
-                            </div>
-                        </div>
-                        <div class="singleTestimonial">
-                            <div class="testiImg">
-                                <img src="assets/images/author/2.jpg" alt="">
-                                <span></span>
-                            </div>
-                            <div class="testicon">
-                                <p>
-                                    They'll have to make the best of things its an uphill climb. Said Californ'y is the place you ought
-                                    to be So they loaded up the truck and moved to Beverly. Hills that is. Swimmin' pools movie stars.
-                                    Maybe you and me were never meant to be.
-                                </p>
-                                <div class="tesAuthor"><h5>Mosharof Khondoker,</h5> <h6>themewar.com</h6></div>
-                            </div>
-                        </div>
-                        <div class="singleTestimonial">
-                            <div class="testiImg">
-                                <img src="assets/images/author/3.jpg" alt="">
-                                <span></span>
-                            </div>
-                            <div class="testicon">
-                                <p>
-                                    They'll have to make the best of things its an uphill climb. Said Californ'y is the place you ought
-                                    to be So they loaded up the truck and moved to Beverly. Hills that is. Swimmin' pools movie stars.
-                                    Maybe you and me were never meant to be.
-                                </p>
-                                <div class="tesAuthor"><h5>Sara Ferdoush,</h5> <h6>themewar.com</h6></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row mt60">
-                <div class="col-lg-12">
-                    <h2 class="sectionTitle">Fair Price</h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="pricingTable text-center">
-                        <i class="icon icon-Car"></i>
-                        <h5>Starter Package</h5>
-                        <p>
-                            Suitable for small business or Organizations.
-                        </p>
-                        <h2>$27.00</h2>
-                        <h6>per project</h6>
-                        <a href="contact.html" class="btt_link"><i class="icon icon-OpenedLock"></i><span>Let's Start</span></a>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="pricingTable text-center">
-                        <i class="icon icon-Truck"></i>
-                        <h5>Business Package</h5>
-                        <p>
-                            Suitable for medium business or Organizations.
-                        </p>
-                        <h2>$47.00</h2>
-                        <h6>per project</h6>
-                        <a href="contact.html" class="btt_link"><i class="icon icon-OpenedLock"></i><span>Let's Start</span></a>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="pricingTable text-center">
-                        <i class="icon icon-BigTruck"></i>
-                        <h5>Pro Package</h5>
-                        <p>
-                            Suitable for any business or Organizations.
-                        </p>
-                        <h2>$97.00</h2>
-                        <h6>per project</h6>
-                        <a href="contact.html" class="btt_link"><i class="icon icon-OpenedLock"></i><span>Let's Start</span></a>
-                    </div>
-                </div>
-            </div>
+{{--            <div class="row mt30">--}}
+{{--                <div class="col-lg-12">--}}
+{{--                    <h2 class="sectionTitle">What They Says?</h2>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--            <div class="row">--}}
+{{--                <div class="col-lg-12">--}}
+{{--                    <div class="testimonialSlider owl-carousel">--}}
+{{--                        <div class="singleTestimonial">--}}
+{{--                            <div class="testiImg">--}}
+{{--                                <img src="assets/images/author/1.jpg" alt="">--}}
+{{--                                <span></span>--}}
+{{--                            </div>--}}
+{{--                            <div class="testicon">--}}
+{{--                                <p>--}}
+{{--                                    They'll have to make the best of things its an uphill climb. Said Californ'y is the place you ought--}}
+{{--                                    to be So they loaded up the truck and moved to Beverly. Hills that is. Swimmin' pools movie stars.--}}
+{{--                                    Maybe you and me were never meant to be.--}}
+{{--                                </p>--}}
+{{--                                <div class="tesAuthor"><h5>Edward Johnson,</h5> <h6>themewar.com</h6></div>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                        <div class="singleTestimonial">--}}
+{{--                            <div class="testiImg">--}}
+{{--                                <img src="assets/images/author/2.jpg" alt="">--}}
+{{--                                <span></span>--}}
+{{--                            </div>--}}
+{{--                            <div class="testicon">--}}
+{{--                                <p>--}}
+{{--                                    They'll have to make the best of things its an uphill climb. Said Californ'y is the place you ought--}}
+{{--                                    to be So they loaded up the truck and moved to Beverly. Hills that is. Swimmin' pools movie stars.--}}
+{{--                                    Maybe you and me were never meant to be.--}}
+{{--                                </p>--}}
+{{--                                <div class="tesAuthor"><h5>Mosharof Khondoker,</h5> <h6>themewar.com</h6></div>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                        <div class="singleTestimonial">--}}
+{{--                            <div class="testiImg">--}}
+{{--                                <img src="assets/images/author/3.jpg" alt="">--}}
+{{--                                <span></span>--}}
+{{--                            </div>--}}
+{{--                            <div class="testicon">--}}
+{{--                                <p>--}}
+{{--                                    They'll have to make the best of things its an uphill climb. Said Californ'y is the place you ought--}}
+{{--                                    to be So they loaded up the truck and moved to Beverly. Hills that is. Swimmin' pools movie stars.--}}
+{{--                                    Maybe you and me were never meant to be.--}}
+{{--                                </p>--}}
+{{--                                <div class="tesAuthor"><h5>Sara Ferdoush,</h5> <h6>themewar.com</h6></div>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--            <div class="row mt60">--}}
+{{--                <div class="col-lg-12">--}}
+{{--                    <h2 class="sectionTitle">Fair Price</h2>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--            <div class="row">--}}
+{{--                <div class="col-lg-4">--}}
+{{--                    <div class="pricingTable text-center">--}}
+{{--                        <i class="icon icon-Car"></i>--}}
+{{--                        <h5>Starter Package</h5>--}}
+{{--                        <p>--}}
+{{--                            Suitable for small business or Organizations.--}}
+{{--                        </p>--}}
+{{--                        <h2>$27.00</h2>--}}
+{{--                        <h6>per project</h6>--}}
+{{--                        <a href="contact.html" class="btt_link"><i class="icon icon-OpenedLock"></i><span>Let's Start</span></a>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--                <div class="col-lg-4">--}}
+{{--                    <div class="pricingTable text-center">--}}
+{{--                        <i class="icon icon-Truck"></i>--}}
+{{--                        <h5>Business Package</h5>--}}
+{{--                        <p>--}}
+{{--                            Suitable for medium business or Organizations.--}}
+{{--                        </p>--}}
+{{--                        <h2>$47.00</h2>--}}
+{{--                        <h6>per project</h6>--}}
+{{--                        <a href="contact.html" class="btt_link"><i class="icon icon-OpenedLock"></i><span>Let's Start</span></a>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--                <div class="col-lg-4">--}}
+{{--                    <div class="pricingTable text-center">--}}
+{{--                        <i class="icon icon-BigTruck"></i>--}}
+{{--                        <h5>Pro Package</h5>--}}
+{{--                        <p>--}}
+{{--                            Suitable for any business or Organizations.--}}
+{{--                        </p>--}}
+{{--                        <h2>$97.00</h2>--}}
+{{--                        <h6>per project</h6>--}}
+{{--                        <a href="contact.html" class="btt_link"><i class="icon icon-OpenedLock"></i><span>Let's Start</span></a>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--            </div>--}}
             <div class="row mt60">
                 <div class="col-lg-5">
-                    <h2 class="sectionTitle">Love To</h2>
+                    <h2 class="sectionTitle">Захоплення</h2>
                     <div class="singleInt">
                         <i class="interest-badminton"></i>
-                        <h3>Badminton</h3>
+                        <h3>автивний відпочинок</h3>
                     </div>
                     <div class="singleInt">
                         <i class="interest-knight"></i>
-                        <h3>Chase</h3>
+                        <h3>Мандрівки</h3>
                     </div>
                     <div class="singleInt">
                         <i class="interest-basketball"></i>
-                        <h3>Basket Ball</h3>
+                        <h3>Рухливі ігри</h3>
                     </div>
                 </div>
                 <div class="col-lg-7">
-                    <h2 class="sectionTitle">Languages</h2>
+                    <h2 class="sectionTitle">Мови</h2>
                     <div class="languageDiv">
                         <div class="ldInner profLevel7">
                             <h5>English</h5>
                             <span></span><span></span><span></span><span></span><span></span>
                             <span></span><span></span><span></span><span></span><span></span>
-                            <i>7/10</i>
-                        </div>
-                        <div class="ldInner profLevel6">
-                            <h5>German</h5>
-                            <span></span><span></span><span></span><span></span><span></span>
-                            <span></span><span></span><span></span><span></span><span></span>
                             <i>6/10</i>
                         </div>
-                        <div class="ldInner profLevel4">
-                            <h5>Spanish</h5>
-                            <span></span><span></span><span></span><span></span><span></span>
-                            <span></span><span></span><span></span><span></span><span></span>
-                            <i>4/10</i>
-                        </div>
-                        <div class="ldInner profLevel9">
-                            <h5>Bangla</h5>
+                        <div class="ldInner profLevel6">
+                            <h5>Українська</h5>
                             <span></span><span></span><span></span><span></span><span></span>
                             <span></span><span></span><span></span><span></span><span></span>
                             <i>9/10</i>
                         </div>
+                        <div class="ldInner profLevel4">
+                            <h5>Російська</h5>
+                            <span></span><span></span><span></span><span></span><span></span>
+                            <span></span><span></span><span></span><span></span><span></span>
+                            <i>9/10</i>
+                        </div>
+                        <div class="ldInner profLevel9">
+                            <h5>РНР</h5>
+                            <span></span><span></span><span></span><span></span><span></span>
+                            <span></span><span></span><span></span><span></span><span></span>
+                            <i>8/10</i>
+                        </div>
                         <div class="ldInner profLevel7">
-                            <h5>Hindi</h5>
+                            <h5>С++</h5>
                             <span></span><span></span><span></span><span></span><span></span>
                             <span></span><span></span><span></span><span></span><span></span>
                             <i>7/10</i>
@@ -319,55 +318,55 @@
                     </div>
                 </div>
             </div>
-            <div class="row mt30">
-                <div class="col-lg-12">
-                    <div class="clientSlider owl-carousel">
-                        <div class="sliderItem">
-                            <a href="javascript:void(0);">
-                                <img src="assets/images/client/8.png" alt="Client"/>
-                            </a>
-                        </div>
-                        <div class="sliderItem">
-                            <a href="javascript:void(0);">
-                                <img src="assets/images/client/9.png" alt="Client"/>
-                            </a>
-                        </div>
-                        <div class="sliderItem">
-                            <a href="javascript:void(0);">
-                                <img src="assets/images/client/10.png" alt="Client"/>
-                            </a>
-                        </div>
-                        <div class="sliderItem">
-                            <a href="javascript:void(0);">
-                                <img src="assets/images/client/11.png" alt="Client"/>
-                            </a>
-                        </div>
-                        <div class="sliderItem">
-                            <a href="javascript:void(0);">
-                                <img src="assets/images/client/12.png" alt="Client"/>
-                            </a>
-                        </div>
-                        <div class="sliderItem">
-                            <a href="javascript:void(0);">
-                                <img src="assets/images/client/13.png" alt="Client"/>
-                            </a>
-                        </div>
-                        <div class="sliderItem">
-                            <a href="javascript:void(0);">
-                                <img src="assets/images/client/14.png" alt="Client"/>
-                            </a>
-                        </div>
-                        <div class="sliderItem">
-                            <a href="javascript:void(0);">
-                                <img src="assets/images/client/15.png" alt="Client"/>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+{{--            <div class="row mt30">--}}
+{{--                <div class="col-lg-12">--}}
+{{--                    <div class="clientSlider owl-carousel">--}}
+{{--                        <div class="sliderItem">--}}
+{{--                            <a href="javascript:void(0);">--}}
+{{--                                <img src="assets/images/client/8.png" alt="Client"/>--}}
+{{--                            </a>--}}
+{{--                        </div>--}}
+{{--                        <div class="sliderItem">--}}
+{{--                            <a href="javascript:void(0);">--}}
+{{--                                <img src="assets/images/client/9.png" alt="Client"/>--}}
+{{--                            </a>--}}
+{{--                        </div>--}}
+{{--                        <div class="sliderItem">--}}
+{{--                            <a href="javascript:void(0);">--}}
+{{--                                <img src="assets/images/client/10.png" alt="Client"/>--}}
+{{--                            </a>--}}
+{{--                        </div>--}}
+{{--                        <div class="sliderItem">--}}
+{{--                            <a href="javascript:void(0);">--}}
+{{--                                <img src="assets/images/client/11.png" alt="Client"/>--}}
+{{--                            </a>--}}
+{{--                        </div>--}}
+{{--                        <div class="sliderItem">--}}
+{{--                            <a href="javascript:void(0);">--}}
+{{--                                <img src="assets/images/client/12.png" alt="Client"/>--}}
+{{--                            </a>--}}
+{{--                        </div>--}}
+{{--                        <div class="sliderItem">--}}
+{{--                            <a href="javascript:void(0);">--}}
+{{--                                <img src="assets/images/client/13.png" alt="Client"/>--}}
+{{--                            </a>--}}
+{{--                        </div>--}}
+{{--                        <div class="sliderItem">--}}
+{{--                            <a href="javascript:void(0);">--}}
+{{--                                <img src="assets/images/client/14.png" alt="Client"/>--}}
+{{--                            </a>--}}
+{{--                        </div>--}}
+{{--                        <div class="sliderItem">--}}
+{{--                            <a href="javascript:void(0);">--}}
+{{--                                <img src="assets/images/client/15.png" alt="Client"/>--}}
+{{--                            </a>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--            </div>--}}
             <div class="row mt60">
                 <div class="col-lg-12">
-                    <h2 class="sectionTitle">Interesting Facts</h2>
+                    <h2 class="sectionTitle">Цікавинки</h2>
                 </div>
             </div>
             <div class="row mb30">
@@ -376,15 +375,15 @@
                         <div class="icon_div">
                             <i><span class="counter">10</span>+</i>
                         </div>
-                        <h5>Years Experience</h5>
+                        <h5>Років досвіду</h5>
                     </div>
                 </div>
                 <div class="col-lg-4">
-                    <div class="icon_box_03 text-center hasCounter" data-count="198">
+                    <div class="icon_box_03 text-center hasCounter" data-count="120">
                         <div class="icon_div">
-                            <i><span class="counter">198</span>+</i>
+                            <i><span class="counter">120</span>+</i>
                         </div>
-                        <h5>Projects Done</h5>
+                        <h5>Успішних проектів</h5>
                     </div>
                 </div>
                 <div class="col-lg-4">
@@ -392,7 +391,7 @@
                         <div class="icon_div">
                             <i><span class="counter">2</span>K+</i>
                         </div>
-                        <h5>Happy Customers</h5>
+                        <h5>Щасливих студентів</h5>
                     </div>
                 </div>
             </div>
