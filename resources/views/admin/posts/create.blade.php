@@ -62,26 +62,33 @@
                                             <div class="invalid-feedback">{{ $message }}</div>
                                             @enderror
                                         </div>
-                                        <div class="row">
-                                            <div class="col-12">
-                                                <div class="card">
-                                                    <div class="card-body">
-                                                        <div id="dropzone">
-                                                            <form action="/upload" class="dropzone needsclick" id="demo-upload">
-                                                                <div class="dz-message needsclick">
-                                                                    <button type="button" class="dz-button">Drop files here or click to upload.</button><br />
-                                                                    <span class="note needsclick">(This is just a demo dropzone. Selected files are <strong>not</strong> actually uploaded.)</span>
-                                                                </div>
-                                                            </form>
-                                                        </div>
-                                                    </div>
-                                                </div>
+                                        <div class="col-12">
+                                            <div class="input-group mb-3">
+                                                <span class="input-group-text" id="basic-addon1">Изображение</span>
+                                                <input type="text" class="form-control" placeholder="Загрузить изображение" aria-label="Загрузить изображение" aria-describedby="basic-addon1">
+                                        <button type="button" class="btn btn-primary btn-sm">Выбрать изображение</button>
                                             </div>
                                         </div>
                                         <div class="col-12">
                                             <button type="submit" class="btn btn-primary">Зберегти</button>
                                         </div>
                                     </form>
+{{--                                    <div class="row">--}}
+{{--                                        <div class="col-12">--}}
+{{--                                            <div class="card">--}}
+{{--                                                <div class="card-body">--}}
+{{--                                                    <div id="dropzone">--}}
+{{--                                                        <form action="/upload" class="dropzone needsclick" id="demo-upload">--}}
+{{--                                                            <div class="dz-message needsclick">--}}
+{{--                                                                <button type="button" class="dz-button">Drop files here or click to upload.</button><br />--}}
+{{--                                                                <span class="note needsclick">(This is just a demo dropzone. Selected files are <strong>not</strong> actually uploaded.)</span>--}}
+{{--                                                            </div>--}}
+{{--                                                        </form>--}}
+{{--                                                    </div>--}}
+{{--                                                </div>--}}
+{{--                                            </div>--}}
+{{--                                        </div>--}}
+{{--                                    </div>--}}
                                 </div>
                             </div>
                         </div>
