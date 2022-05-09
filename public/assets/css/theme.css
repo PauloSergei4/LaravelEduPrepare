@@ -2,7 +2,7 @@
  Theme Name: Bittanto
  Theme URI: https://themeforest.net/user/themewar/portfolio
  Author: themewar
- Author URI: 
+ Author URI:
  Description: Bittanto - Creative Resume HTML5 Responsive Template
  Version: 1.0
  License:
@@ -236,7 +236,7 @@
     min-width: 115px;
     padding: 40px 15px 39px;
     position: relative;
-    
+
     transition: all ease 300ms;
     -moz-transition: all ease 300ms;
     -webkit-transition: all ease 300ms;
@@ -289,7 +289,7 @@
     margin: auto 0;
     height: 40px;
     opacity: .4;
-    
+
     transition: all ease 300ms;
     -moz-transition: all ease 300ms;
     -webkit-transition: all ease 300ms;
@@ -624,7 +624,7 @@
     max-width: 100%;
     min-width: inherit;
     opacity: .3;
-    
+
     transition: all ease 300ms;
     -moz-transition: all ease 300ms;
     -webkit-transition: all ease 300ms;
@@ -1206,12 +1206,12 @@
     -moz-animation:spin 1s linear infinite;
     animation:spin 1s linear infinite;
 }
-@keyframes spin { 
-    100% { 
+@keyframes spin {
+    100% {
         -moz-transform: rotate(360deg);
-        -webkit-transform: rotate(360deg); 
-        transform:rotate(360deg); 
-    } 
+        -webkit-transform: rotate(360deg);
+        transform:rotate(360deg);
+    }
 }
 .alert.alert-warning.folioAlert{
     color: #856404;
@@ -1240,6 +1240,8 @@
 .biThumb img{
     width: 100%;
     height: auto;
+    /*width: 350px;*/
+    /*height: 240px;*/
 }
 .biThumb:after {
     position: absolute;

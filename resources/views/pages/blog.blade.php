@@ -16,7 +16,7 @@
                 <div class="col-lg-6">
                     <div class="blogItem text-left">
                         <div class="biThumb">
-                            <img src="assets/images/blog/1.jpg" alt=""/>
+                            <img src="{{asset("storage/".$post->image)}}" intrinsicsize="350px x 235px" alt=""/>
                             <div class="biMeta">
                                 <a href="blog.html"></a>Rubric <a href="blog.html">{{$post->getPostDate()}}{{--\Carbon\Carbon::createFromFormat('Y-m-d H:i:s', $post->created_at)->format('d.m.Y')--}}</a>
                             </div>

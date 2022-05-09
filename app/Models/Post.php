@@ -10,7 +10,7 @@ class Post extends Model
 {
     use HasFactory;
 //цим ми дозволяємо масово змінювати тільки вказані поля:
-    protected $fillable = ['title','content', 'rubric_id'];
+    protected $fillable = ['title','content', 'rubric_id', 'image'];
 
     public function getPostDate()
     {

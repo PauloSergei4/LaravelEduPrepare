@@ -30,7 +30,7 @@
                             <div class="example-container">
                                 <div class="example-content">
 
-                                    <form class="row g-3" action="{{route('admin.posts.store')}}" method="post">
+                                    <form class="row g-3" action="{{route('admin.posts.store')}}" method="post" enctype="multipart/form-data">
                                         @csrf
                                         <div class="col-12">
                                             <label for="inputTitle" class="form-label">Назва</label>
@@ -63,10 +63,11 @@
                                             @enderror
                                         </div>
                                         <div class="col-12">
+                                            <label for="inputContent" class="form-label">Оберіть зображення:  </label>
                                             <div class="input-group mb-3">
-                                                <span class="input-group-text" id="basic-addon1">Изображение</span>
-                                                <input type="text" class="form-control" placeholder="Загрузить изображение" aria-label="Загрузить изображение" aria-describedby="basic-addon1">
-                                        <button type="button" class="btn btn-primary btn-sm">Выбрать изображение</button>
+{{--                                                <span class="input-group-text" id="basic-addon1">Изображение</span>--}}
+                                                <input type="file" class="form-control-file" placeholder="Загрузить изображение" aria-label="Загрузить изображение" aria-describedby="basic-addon1" name="image">
+{{--                                        <button type="button" class="btn btn-primary btn-sm">Выбрать изображение</button>--}}
                                             </div>
                                         </div>
                                         <div class="col-12">
