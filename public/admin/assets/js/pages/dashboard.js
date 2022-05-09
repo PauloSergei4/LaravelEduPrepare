@@ -64,14 +64,14 @@ $(document).ready(function () {
         strokeDashArray: 4
     }
 }
-  var chart1 = new ApexCharts(
-    document.querySelector("#apex-earnings"),
-    options1
-  );
+  // var chart1 = new ApexCharts(
+  //   document.querySelector("#apex-earnings"),
+  //   options1
+  // );
+  //
+  // chart1.render();
 
-  chart1.render();
 
-  
   var options2 = {
     chart: {
       id: 'sparkline1',
@@ -99,8 +99,8 @@ $(document).ready(function () {
     colors: ['#FFDDB8']
   }
 
-  var chart2 = new ApexCharts(document.querySelector("#widget-stats-chart1"), options2);
-  chart2.render();
+  // var chart2 = new ApexCharts(document.querySelector("#widget-stats-chart1"), options2);
+  // chart2.render();
 
   var options3 = {
     chart: {
@@ -129,8 +129,8 @@ $(document).ready(function () {
     colors: ['#ffccce']
   }
 
-  var chart3 = new ApexCharts(document.querySelector("#widget-stats-chart2"), options3);
-  chart3.render();
+  // var chart3 = new ApexCharts(document.querySelector("#widget-stats-chart2"), options3);
+  // chart3.render();
 
   var options4 = {
     chart: {
@@ -159,6 +159,6 @@ $(document).ready(function () {
     colors: ['#DCE6EC']
   }
 
-  var chart4 = new ApexCharts(document.querySelector("#widget-stats-chart3"), options4);
-  chart4.render();
+  // var chart4 = new ApexCharts(document.querySelector("#widget-stats-chart3"), options4);
+  // chart4.render();
 });

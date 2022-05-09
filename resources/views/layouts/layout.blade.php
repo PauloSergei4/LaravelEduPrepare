@@ -27,6 +27,8 @@
     <!-- Favicon Icon -->
     <link rel="icon"  type="image/png" href="assets/images/favicon.png">
     <!-- Favicon Icon -->
+
+    @section('link')@endsection
 </head>
 <body class="dark">
 
@@ -142,8 +144,8 @@
 <script src="assets/js/anime.min.js"></script>
 <script src="assets/js/folio.js"></script>
 <script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
-
 <script src="assets/js/theme.js"></script>
+@section('script')@endsection
 <!-- End Include All JS -->
 </body>
 </html>

@@ -2,6 +2,11 @@
 @section('title')
     {{$title}} - @parent
 @endsection
+@section('link')
+    @parent
+<link href="/admin/assets/plugins/highlight/styles/github-gist.css" rel="stylesheet">
+<link href="/admin/assets/plugins/dropzone/min/dropzone.min.css" rel="stylesheet">
+@endsection
 @section('content')
     <div class="content-wrapper">
         <div class="container-fluid">
@@ -57,15 +62,19 @@
                                             <div class="invalid-feedback">{{ $message }}</div>
                                             @enderror
                                         </div>
-                                        <div class="card">
-                                            <div class="card-body">
-                                                <div id="dropzone">
-                                                    <form action="/upload" class="dropzone needsclick" id="demo-upload">
-                                                        <div class="dz-message needsclick">
-                                                            <button type="button" class="dz-button">Drop files here or click to upload.</button><br />
-                                                            <span class="note needsclick">(This is just a demo dropzone. Selected files are <strong>not</strong> actually uploaded.)</span>
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        <div id="dropzone">
+                                                            <form action="/upload" class="dropzone needsclick" id="demo-upload">
+                                                                <div class="dz-message needsclick">
+                                                                    <button type="button" class="dz-button">Drop files here or click to upload.</button><br />
+                                                                    <span class="note needsclick">(This is just a demo dropzone. Selected files are <strong>not</strong> actually uploaded.)</span>
+                                                                </div>
+                                                            </form>
                                                         </div>
-                                                    </form>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -82,3 +91,10 @@
         </div>
     </div>
 @endsection
+@section('script')
+
+    <script src="/admin/assets/plugins/dropzone/min/dropzone.min.js"></script>
+
+@endsection
+
+

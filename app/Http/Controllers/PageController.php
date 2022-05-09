@@ -15,13 +15,13 @@ class PageController extends Controller
     {
         $title = 'Блог';
 
-        if(Cache::has('posts')){
-            $posts = Cache::get('posts');
-        }
-        else {
-            $posts = Post::orderBy('id', 'desc')->get();
+//        if(Cache::has('posts')){
+//            $posts = Cache::get('posts');
+//        }
+//        else {
+            $posts = Post::orderBy('id', 'desc')->paginate(4);
             Cache::put('posts',$posts, 3600);
-        }
+       // }
         //$posts = Post::orderBy('id', 'desc')->get();
         return view('pages.blog', compact('title', 'posts'));
     }

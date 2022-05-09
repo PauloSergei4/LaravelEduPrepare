@@ -23,6 +23,7 @@
     <link href="/admin/assets/plugins/pace/pace.css" rel="stylesheet">
 
 
+
     <!-- Theme Styles -->
     <link href="/admin/assets/css/main.min.css" rel="stylesheet">
     <link href="/admin/assets/css/darktheme.css" rel="stylesheet">
@@ -30,7 +31,7 @@
 
     <link rel="icon" type="image/png" sizes="32x32" href="/admin/assets/images/neptune.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/admin/assets/images/neptune.png" />
-
+    @section('link') @show
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -217,16 +218,11 @@
 <script src="/admin/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
 <script src="/admin/assets/plugins/perfectscroll/perfect-scrollbar.min.js"></script>
 <script src="/admin/assets/plugins/pace/pace.min.js"></script>
-<script src="/admin/assets/plugins/apexcharts/apexcharts.min.js"></script>
-<script src="/admin/assets/js/main.min.js"></script>
-<script src="/admin/assets/js/custom.js"></script>
-<script src="/admin/assets/js/pages/dashboard.js"></script>
-<script src="/admin/assets/plugins/perfectscroll/perfect-scrollbar.min.js"></script>
-<script src="/admin/assets/plugins/dropzone/min/dropzone.min.js"></script>
-<script src="/admin/assets/plugins/pace/pace.min.js"></script>
 <script src="/admin/assets/plugins/highlight/highlight.pack.js"></script>
-{{--<script src="/admin/assets/js/pages/select2.js"></script>--}}
-{{--<script src="/admin/assets/plugins/select2/js/select2.full.min.js"></script>--}}
-{{--<script src="/admin/assets/plugins/highlight/highlight.pack.js"></script>--}}
+<script src="/admin/assets/js/main.min.js"></script>
+{{--<script src="/admin/assets/js/custom.js"></script>--}}
+{{--<script src="/admin/assets/js/pages/dashboard.js"></script>--}}
+@section('script')@show
 </body>
 </html>
+
