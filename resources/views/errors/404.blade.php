@@ -1,15 +1,25 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>404 - Not Found</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ошибка 404 - Страница не найдена</title>
+    <link href="assets/css/error/style.css" rel="stylesheet">
 </head>
-<body>
 
-<h1>{{$exception->getMessage()}}</h1>
-<h1>404 - Not found</h1>
+<body>
+<section class="error-404-section section-padding">
+    <div class="error">
+        <img src="assets/css/error/error404.png" alt>
+    </div>
+    <div class="error-message">
+{{--        <h1>{{$exception->getMessage()}}</h1>--}}
+        <h3>Ой! Сторінка не знайдена!</h3>
+        <p>На превеликий жаль, таку сторінку не знайдено. Можливо, ви невірно ввели адресу.</p>
+        <a href="{{route('home')}}" class="theme-btn">Повернутись на головну</a>
+    </div>
+
+</section>
 </body>
 </html>
