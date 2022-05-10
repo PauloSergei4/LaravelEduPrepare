@@ -29,7 +29,7 @@ class PostController extends Controller
         $posts = Post::orderBy('id', 'desc')->get();
 
         $maxpost = DB::table('posts')->max('id');
-        return view('admin.posts.posts', compact( 'title','posts', 'maxpost'));
+        return view('admin.posts.index', compact( 'title','posts', 'maxpost'));
     }
 
     /**
@@ -84,7 +84,7 @@ class PostController extends Controller
 
         ]);
         $request->session()->flash('success', 'Дані збережено');
-        return redirect()->route('admin.posts', compact('request'));
+        return redirect()->route('admin.posts.index', compact('request'));
     }
 
     /**
@@ -138,7 +138,7 @@ class PostController extends Controller
         $post = Post::find($id);
         $post->update($request->all());
         $request->session()->flash('success', 'Дані збережено');
-        return redirect()->route('admin.posts', compact('request'));
+        return redirect()->route('admin.posts.index', compact('request'));
     }
 
     /**
@@ -150,6 +150,6 @@ class PostController extends Controller
     public function destroy($id)
     {
         Post::destroy($id);
-        return redirect()->route('admin.posts')->with('success','Успішно видалено');
+        return redirect()->route('admin.posts.index')->with('success','Успішно видалено');
     }
 }

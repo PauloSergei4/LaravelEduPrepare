@@ -31,7 +31,7 @@
                                 <td>{{$post->rubric->name}}</td>
                                 <td>{{$post->getPostDate()}}</td>
                                 <td><a href="{{route('admin.posts.edit', $post->id)}}"><button type="button" class="btn btn-primary btn-burger"><i class="material-icons">edit</i></button></a>
-                                <a href="{{route('admin.posts.delete', $post->id)}}"><button type="button" class="btn btn-danger btn-burger"><i class="material-icons">delete_outline</i></button></a></td>
+                                <a href="{{route('admin.posts.destroy', $post->id)}}"><button type="button" class="btn btn-danger btn-burger"><i class="material-icons">delete_outline</i></button></a></td>
                             </tr>
                             @endforeach
                             </tbody>

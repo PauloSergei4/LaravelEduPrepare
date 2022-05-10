@@ -22,7 +22,7 @@ class RubricController extends Controller
        // dd($title);
         $rubrics = Rubric::orderBy('id', 'desc')->get();
         $maxpost = DB::table('posts')->max('id');
-        return view('admin.rubrics.rubrics', compact( 'title', 'rubrics','maxpost'));
+        return view('admin.rubrics.index', compact( 'title', 'rubrics','maxpost'));
     }
 
     /**
@@ -55,7 +55,7 @@ class RubricController extends Controller
         $validator = Validator::make($request->all(),$rules, $messages)->validate();
         Rubric::create($request->all());
         $request->session()->flash('success', 'Дані збережено');
-        return redirect()->route('admin.rubrics', compact('request'));
+        return redirect()->route('admin.rubrics.index', compact('request'));
     }
 
     /**
@@ -102,7 +102,7 @@ class RubricController extends Controller
         $rubric = Rubric::find($id);
         $rubric->update($request->all());
         $request->session()->flash('success', 'Дані збережено');
-        return redirect()->route('admin.rubrics', compact('request'));
+        return redirect()->route('admin.rubrics.index', compact('request'));
     }
 
     /**
@@ -113,7 +113,8 @@ class RubricController extends Controller
      */
     public function destroy($id)
     {
+        dd($id);
         Rubric::destroy($id);
-        return redirect()->route('admin.rubrics')->with('success','Успішно видалено');
+        return redirect()->route('admin.rubrics.index')->with('success','Успішно видалено');
     }
 }

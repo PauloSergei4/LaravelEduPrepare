@@ -29,7 +29,7 @@
 {{--                                        <td>{{$post->$rubrics->name}}</td>--}}
                                         <td>{{$rubric->getRubricDate()}}</td>
                                         <td><a href="{{route('admin.rubrics.edit', $rubric->id)}}"><button type="button" class="btn btn-primary btn-burger"><i class="material-icons">edit</i></button></a>
-                                            <a href="{{route('admin.rubrics.delete', $rubric->id)}}"><button type="button" class="btn btn-danger btn-burger"><i class="material-icons">delete_outline</i></button></a></td>
+                                            <a href="{{route('admin.rubrics.destroy', $rubric->id)}}"><button type="button" class="btn btn-danger btn-burger"><i class="material-icons">delete_outline</i></button></a></td>
                                     </tr>
                                 @endforeach
                                 </tbody>

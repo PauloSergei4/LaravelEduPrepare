@@ -57,27 +57,24 @@ Route::fallback(function(){
 //
 Route::prefix('admin')->name('admin.')->middleware('admin')->group(function(){
     Route::get('/home',     [AdminController::class, 'index'])->name('home');
-    Route::get('/posts',    [PostController::class, 'index'])->name('posts');
-    Route::post('/posts',   [PostController::class, 'store'])->name('posts.store');
-    Route::get('/posts/create',   [PostController::class, 'create'])->name('posts.create');
-    Route::get('/posts/{post}/edit',     [PostController::class, 'edit'])->name('posts.edit');
-    Route::put('/posts/{post}',     [PostController::class, 'update'])->name('posts.update');
-    Route::get('/posts/{post}/delete',     [PostController::class, 'destroy'])->name('posts.delete');
+//    Route::get('/posts',    [PostController::class, 'index'])->name('posts');
+//    Route::post('/posts',   [PostController::class, 'store'])->name('posts.store');
+//    Route::get('/posts/create',   [PostController::class, 'create'])->name('posts.create');
+//    Route::get('/posts/{post}/edit',     [PostController::class, 'edit'])->name('posts.edit');
+//    Route::put('/posts/{post}',     [PostController::class, 'update'])->name('posts.update');
+//    Route::get('/posts/{post}/delete',     [PostController::class, 'destroy'])->name('posts.delete');
     Route::get('/profile',  [AdminController::class, 'profile'])->name('profile');
-    Route::get('/rubrics',   [RubricController::class, 'index'])->name('rubrics');
-    Route::get('/rubrics/create',[RubricController::class, 'create'])->name('rubrics.create');
-    Route::post('/rubrics',   [RubricController::class, 'store'])->name('rubrics.store');
-    Route::get('/rubrics/{rubric}/edit',     [RubricController::class, 'edit'])->name('rubrics.edit');
-    Route::put('/rubrics/{rubric}',     [RubricController::class, 'update'])->name('rubrics.update');
-    Route::get('/rubrics/{rubric}/delete',     [RubricController::class, 'destroy'])->name('rubrics.delete');
+//    Route::get('/rubrics',   [RubricController::class, 'index'])->name('rubrics');
+//    Route::get('/rubrics/create',[RubricController::class, 'create'])->name('rubrics.create');
+//    Route::post('/rubrics',   [RubricController::class, 'store'])->name('rubrics.store');
+//    Route::get('/rubrics/{rubric}/edit',     [RubricController::class, 'edit'])->name('rubrics.edit');
+//    Route::put('/rubrics/{rubric}',     [RubricController::class, 'update'])->name('rubrics.update');
+//    Route::get('/rubrics/{rubric}/delete',     [RubricController::class, 'destroy'])->name('rubrics.delete');
+    Route::resource('posts', PostController::class);
+    Route::resource('rubrics', RubricController::class);
 
-//    Route::get('post/create', function (){
-//        Return 'Posts Create';
-//    });
-//
-//    Route::get('post/{id}/edit', function ($id){
-//        Return "Post $id edit";
-//    })->name('post');
+
+
 
 });
 

@@ -20,14 +20,14 @@
              <li @if (Route::is('admin.home'))class="active-page"@endif>
                 <a href="{{route('admin.home')}}" @if (Route::is('admin.home'))class="active"@endif><i class="material-icons-two-tone">dashboard</i>Панель керування</a>
             </li>
-            <li @if (Route::is('admin.posts'))class="active-page"@endif>
-                <a href="{{route('admin.posts')}}"><i class="material-icons-two-tone">inbox</i>Пости блогу<span class="badge rounded-pill badge-danger float-end">{{$maxpost}}</span></a>
+            <li @if (Route::is('admin.posts.index'))class="active-page"@endif>
+                <a href="{{route('admin.posts.index')}}"><i class="material-icons-two-tone">inbox</i>Пости блогу<span class="badge rounded-pill badge-danger float-end">{{$maxpost}}</span></a>
             </li>
             <li @if (Route::is('admin.create'))class="active-page"@endif>
                 <a href="{{route('admin.posts.create')}}"><i class="material-icons-two-tone">cloud_queue</i>Створити запис</a>
             </li>
-            <li @if (Route::is('admin.rubrics'))class="active-page"@endif>
-                <a href="{{route('admin.rubrics')}}"><i class="material-icons-two-tone">bookmark</i>Рубріки</a>
+            <li @if (Route::is('admin.rubrics.index'))class="active-page"@endif>
+                <a href="{{route('admin.rubrics.index')}}"><i class="material-icons-two-tone">bookmark</i>Рубріки</a>
             </li>
             <li @if (Route::is('admin.profile'))class="active-page"@endif>
                 <a href="{{route('admin.profile')}}"><i class="material-icons-two-tone">sentiment_satisfied_alt</i>Профіль</a>
