@@ -113,7 +113,6 @@ class RubricController extends Controller
      */
     public function destroy($id)
     {
-        dd($id);
         Rubric::destroy($id);
         return redirect()->route('admin.rubrics.index')->with('success','Успішно видалено');
     }

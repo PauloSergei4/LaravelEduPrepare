@@ -29,7 +29,24 @@
 {{--                                        <td>{{$post->$rubrics->name}}</td>--}}
                                         <td>{{$rubric->getRubricDate()}}</td>
                                         <td><a href="{{route('admin.rubrics.edit', $rubric->id)}}"><button type="button" class="btn btn-primary btn-burger"><i class="material-icons">edit</i></button></a>
-                                            <a href="{{route('admin.rubrics.destroy', $rubric->id)}}"><button type="button" class="btn btn-danger btn-burger"><i class="material-icons">delete_outline</i></button></a></td>
+                                            <a href="{{route('admin.rubrics.destroy', $rubric->id)}}"><button type="button" class="btn btn-danger btn-burger" onclick="return confirm('Ви впевнені?')"><i class="material-icons">delete_outline</i></button></a></td>
+
+{{--                                        <form action="{{ route('admin.rubrics.destroy', $rubric->id) }}" method="POST">--}}
+{{--                                            @csrf--}}
+{{--                                            @method('DELETE')--}}
+{{--                                            <button class="btn">--}}
+{{--                                                <i class="fas fa-thumbs-down"></i>--}}
+{{--                                            </button>--}}
+{{--                                            <button type="button" class="btn btn-danger btn-burger" onclick="return confirm('Ви впевнені?')"><i class="material-icons">delete_outline</i></button>--}}
+{{--                                        </form>--}}
+
+{{--                                        <form action="{{ route('admin.rubrics.destroy', $rubric->id) }}">--}}
+{{--                                            {{ method_field('DELETE') }}--}}
+{{--                                            {{ csrf_field() }}--}}
+{{--                                            <a href="{{route('admin.rubrics.destroy', $rubric->id)}}"><button type="submit" class="btn btn-danger btn-burger" onclick="return confirm('Ви впевнені?')"><i class="material-icons">delete_outline</i></button></a>--}}
+{{--                                            <input type="submit" value="<i class="material-icons">delete_outline</i>" class="btn btn-danger btn-block" onclick="return confirm('Ви впевнені?')">--}}
+{{--                                        </form>--}}
+
                                     </tr>
                                 @endforeach
                                 </tbody>

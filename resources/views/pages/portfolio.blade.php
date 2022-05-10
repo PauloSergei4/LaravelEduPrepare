@@ -12,6 +12,7 @@
                     </div>
                 </div>
                 <p>Сторінка в розробці</p>
+                <p class="folio_cat"><a href="https://web.centr.today/" target="_blank">А поки перегляньте сайт веб-студії</a></p>
 {{--                <div class="row">--}}
 {{--                    <div class="col-lg-12">--}}
 {{--                        <ul class="filterUL">--}}
