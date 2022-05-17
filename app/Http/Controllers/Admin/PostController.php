@@ -125,18 +125,30 @@ class PostController extends Controller
         $rules = [
             'title' => 'required|min:5|max:100',
             'content'=>'required',
-            'rubric_id'=>'integer'
+            'rubric_id'=>'integer',
+            'image' => 'nullable|image'
         ];
         $messages = [
             'title.required' => 'Заповніть поле назви',
             'title.min'=>'Мінімум 5 символів в назві',
             'rubric_id.integer'=>'Оберіть рубрику',
             'content.required' => 'Ви не написали статтю',
+            'image.image' => 'Ви завантажили не зображення'
         ];
+        if ($request->hasFile('image')){
+            $folder = date('Y-m-d');
+            $image = $request->file('image')->store("images/blog/{$folder}");
+        }
 
         $validator = Validator::make($request->all(),$rules, $messages)->validate();
         $post = Post::find($id);
-        $post->update($request->all());
+        $post->update([
+            'title'=>$request->title,
+            'content'=>$request->content,
+            'rubric_id'=>$request->rubric_id,
+            'image'=>$image,
+
+        ]);
         $request->session()->flash('success', 'Дані збережено');
         return redirect()->route('admin.posts.index', compact('request'));
     }
