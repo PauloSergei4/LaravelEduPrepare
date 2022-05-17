@@ -18,7 +18,8 @@
 {{--        <h1>{{$exception->getMessage()}}</h1>--}}
         <h3>Ой! Сторінка не знайдена!</h3>
         <p>На превеликий жаль, таку сторінку не знайдено. Можливо, ви невірно ввели адресу.</p>
-        <a href="{{route('home')}}" class="theme-btn">Повернутись на головну</a>
+        <p><div class="col-4"><a href="{{route('home')}}" class="theme-btn">Повернутись на головну</a></div></p>
+        <p><div class="col-4"><a href="{{route('login')}}" class="theme-btn">Авторизуватись</a></div></p>
     </div>
 
 </section>
